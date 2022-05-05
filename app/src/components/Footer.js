@@ -1,14 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
 
     return (
+        <>
         <footer className="relative pb-16 lg:py-16 border-t border-gray-600">
     <div className="flex flex-col items-center justify-between mx-auto max-w-screen-xl">
       <ul className="flex flex-col lg:flex-row gap-y-4 items-center text-sm font-semibold text-gray-300 py-12 lg:py-0">
 
         <li className="mx-7 hover:text-yellow-200">
-          <a href="/insurance-faq.html">FAQ</a>
+          <Link to="/insurance-faq.html">FAQ</Link>
         </li>
 
         <li className="mx-7 hover:text-yellow-200">
@@ -16,24 +18,24 @@ export default function Footer() {
         </li>
 
         <li className="mx-7 hover:text-yellow-200">
-          <a href="/contact.html">CONTACT</a>
+          <Link to="/contact.html">CONTACT</Link>
         </li>
 
         <li className="mx-7 hover:text-yellow-200">
-          <a href="/insurance-resources.html">RESOURCES</a>
+          <Link to="/insurance-resources.html">RESOURCES</Link>
         </li>
 
 
         <li className="mx-7 hover:text-yellow-200">
-          <a href="/car-insurance.html">CAR INSURANCE</a>
+          <Link to="/car-insurance.html">CAR INSURANCE</Link>
         </li>
 
         <li className="mx-7 hover:text-yellow-200">
-          <a href="/home-insurance.html">HOME INSURANCE</a>
+          <Link to="/home-insurance.html">HOME INSURANCE</Link>
         </li>
 
         <li className="mx-7 hover:text-yellow-200">
-          <a href="/combined-insurance.html">COMBINED INSURANCE</a>
+          <Link to="/combined-insurance.html">COMBINED INSURANCE</Link>
         </li>
       </ul>
 
@@ -91,5 +93,6 @@ export default function Footer() {
       <span>&copy; The Brella Guys 2021</span>
     </div>
   </footer>
+  </>
     );
 }

@@ -3,6 +3,7 @@ import React from 'react';
 export default function Header() {
 
     return (
+        <>
         <header className="fixed w-full z-10 bg-black">
         <nav className="lg:max-w-screen-xl  flex flex-row flex-wrap justify-between my-4 lg:my-6 ml-auto mr-auto"
           role="navigation">
@@ -26,11 +27,11 @@ export default function Header() {
                 viewBox="0 0 256 256">
                 <rect width="256" height="256" fill="none"></rect>
                 <line x1="40" y1="128" x2="216" y2="128" stroke="white" strokeLinecap="round" strokeLinejoin="round"
-                  stroke-width="16"></line>
+                  strokeWidth="16"></line>
                 <line x1="40" y1="64" x2="216" y2="64" stroke="white" strokeLinecap="round" strokeLinejoin="round"
-                  stroke-width="16"></line>
+                  strokeWidth="16"></line>
                 <line x1="40" y1="192" x2="216" y2="192" stroke="white" strokeLinecap="round" strokeLinejoin="round"
-                  stroke-width="16"></line>
+                  strokeWidth="16"></line>
               </svg>
             </button>
           </div>
@@ -45,6 +46,7 @@ export default function Header() {
           </div>
         </nav>
       </header>
+      </>
     );
 
 }

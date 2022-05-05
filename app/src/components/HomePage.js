@@ -3,10 +3,11 @@ import React from 'react';
 export default function HomePage() {
 
     return (
+        <>
         <main className="pt-24 px-4 md:px-6 lg:px-8 2xl:max-w-screen-2xl 2xl:mx-auto">
             <section>
                 <div className="flex flex-col items-center">
-                    <div className="h-40 lg:h-72"><img class="h-full object-contain" src="./images/hero-umbrella.png"
+                    <div className="h-40 lg:h-72"><img className="h-full object-contain" src="./images/hero-umbrella.png"
                         alt="A yellow umbrella" />
                     </div>
                     <h1
@@ -26,7 +27,8 @@ export default function HomePage() {
                     <div className="flex flex-col gap-y-4">
                         <a className="inline-block tracking-wider px-8 py-2 rounded-md font-semibold uppercase mx-4 border-2 border-gray-100 text-gray-100 hover:border-yellow-200 transition-colors duration-300 hover:text-yellow-200"
                             href="/get-a-free-broker.html">Free
-                            Broker</a><a
+                            Broker</a>
+                            <a
                                 className="inline-block tracking-wider px-8 py-2 rounded-md  uppercase mx-4 underline text-gray-400 hover:text-yellow-200 transition-colors duration-300"
                                 href="/get-a-free-quote.html">Quick Quote</a>
                     </div>
@@ -327,7 +329,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex flex-col items-center justify-between pt-12 lg:pt-20 w-full lg:w-auto">
                     <h2 className="text-sm font-medium text-gray-400">Want to work with us?</h2>
-                    <form name="landing-page-contact" data-netlify="true" autocomplete="off" netlify-honeypot="bot-field"
+                    <form name="landing-page-contact" data-netlify="true" autoComplete="off" netlify-honeypot="bot-field"
                         className="flex items-center mt-2 w-full md:w-auto">
                         <p className="hidden">
                             <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
@@ -352,5 +354,6 @@ export default function HomePage() {
                 </div>
             </section>
         </main>
+        </>
     );
 }
