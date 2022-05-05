@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
 
@@ -38,10 +39,10 @@ export default function Header() {
           <div id="nav_content"
             className="w-full hidden py-8 lg:flex lg:w-auto lg:py-0 lg:items-center rounded-br-5xl shadow-md lg:shadow-none border-b-2 lg:border-0 border-blue-800 bg-black ">
             <ul className="flex flex-col gap-y-4 ml-auto text-md text-gray-200 font-semibold lg:flex-row">
-              <li className="mx-6 w-mc hover:text-yellow-200"><a href="/car-insurance.html">Car Insurance</a></li>
-              <li className="mx-6 w-mc hover:text-yellow-200"><a href="/blog.html">Blog</a></li>
-              <li className="mx-6 w-mc hover:text-yellow-200"><a href="/about.html">About</a></li>
-              <li className="mx-6 w-mc hover:text-yellow-200"><a href="/contact.html">Contact</a></li>
+              <li className="mx-6 w-mc hover:text-yellow-200"><Link to="/car-insurance.html">Car Insurance</Link></li>
+              <li className="mx-6 w-mc hover:text-yellow-200"><Link to="/blog">Blog</Link></li>
+              <li className="mx-6 w-mc hover:text-yellow-200"><Link to="/about.html">About</Link></li>
+              <li className="mx-6 w-mc hover:text-yellow-200"><Link to="/contact.html">Contact</Link></li>
             </ul>
           </div>
         </nav>
